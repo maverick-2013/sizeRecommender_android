@@ -9,7 +9,7 @@ plugins {
 val githubProperties = Properties()
 githubProperties.load(project.rootProject.file("github.properties").reader())
 
-val versionName = "1.0"
+val versionName = "2.0"
 val artifactId = "sizeRecommenderSDK"
 val githubUsername: String = githubProperties.getProperty("gpr.usr") ?: System.getenv("GPR_USER")
 val githubPassword: String = githubProperties.getProperty("gpr.key") ?: System.getenv("GPR_KEY")
